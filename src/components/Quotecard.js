@@ -73,8 +73,12 @@ function Quotecard() {
                 <p><strong>"</strong> {currentquote} <strong>"</strong> <br/><br/><em>{currentteller}</em> </p>
                 <div style={BtnsContainerStyle}>
                     <div>
-                        <button style={socialBtnStyle}><i class="fab fa-facebook" fa-2x></i></button>
-                        <button style={socialBtnStyle}><i class="fab fa-instagram" fa-2x></i></button>
+                        <a href="https://www.facebook.com">
+                          <button style={socialBtnStyle}><i class="fab fa-facebook" fa-2x></i></button>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <button style={socialBtnStyle}><i class="fab fa-instagram" fa-2x></i></button>
+                        </a>
                     </div>
                     <div>
                         <button style={btnStyle} onClick={() => {dispatch(newquote()); changeColors()}}>New Quote</button>
